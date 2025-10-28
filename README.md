@@ -69,14 +69,15 @@ https://ai-interactive-dashboard-834196002468.asia-south1.run.app
 │ Google Cloud Storage Bucket│
 │  Logs user data or images  │
 └────────────────────────────┘
-🧩 AI Studio Prompt (Used in Development)
+
+##🧩 AI Studio Prompt (Used in Development)
 Prompt Example:
 
 "Explain the following code step-by-step for a beginner. Highlight the main logic and key functions."
 
 AI Studio was used to generate the backend logic, refine prompt templates, and help structure explanations before integration into the deployed Cloud Run app.
 
-🧩 Repository Structure
+##🧩 Repository Structure
 app.py
 index.html
 .env.example
@@ -84,7 +85,7 @@ requirements.txt
 README.md
 LICENSE
 
-🧠 Future Improvements
+##🧠 Future Improvements
 Add real-time student progress tracking
 
 Integrate Firestore for saving session history
