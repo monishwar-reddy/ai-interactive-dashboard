@@ -59,64 +59,53 @@ AI Studio (Gemini) was used to generate backend logic snippets, refine prompt te
 
 ---
 
-## ⚙️ Installation & Local Run (Example — Python + Flask)
-
-> **Prerequisites:** Python 3.9+, pip
-
-## ⚙️ Setup Instructions
-
+⚙️ Setup Instructions
 1️⃣ Clone the repository
-```bash
 git clone https://github.com/<your-username>/ai-tutor.git
 cd ai-tutor
+
 2️⃣ Create and activate a virtual environment
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate    # Mac/Linux
 venv\Scripts\activate       # Windows
+
 3️⃣ Install dependencies
-bash
-Copy code
 pip install -r requirements.txt
+
 4️⃣ Set up your environment variables
+
 Create a file named .env and add:
 
-env
-Copy code
 GOOGLE_API_KEY=your_gemini_api_key
 GCS_BUCKET_NAME=your_bucket_name
 FLASK_SECRET=your_secret_key
+
 5️⃣ Run locally
-bash
-Copy code
 python app.py
+
+
 Access it locally at: http://127.0.0.1:5000
 
 ☁️ Deploying to Google Cloud Run
+
 1️⃣ Enable Cloud Run and Cloud Build APIs in Google Cloud Console.
+
 2️⃣ Authenticate with your Google account:
 
-bash
-Copy code
 gcloud auth login
+
+
 3️⃣ Build and deploy:
 
-bash
-Copy code
 gcloud run deploy ai-tutor \
   --source . \
   --region asia-south1 \
   --allow-unauthenticated
+
+
 Your app will be hosted at a link like:
 
-arduino
-Copy code
 https://ai-tutor-xxxxxx.asia-south1.run.app
-```
-
----
-
 ## ☁️ Deploy (High-level — Google Cloud Run)
 
 1. Build container (Google Cloud Build / Docker)
