@@ -27,11 +27,10 @@
 | Component              | Technology Used                             |
 | ---------------------- | ------------------------------------------- |
 | **Frontend**           | HTML, CSS, JavaScript                       |
-| **Backend**            | Python (Flask / FastAPI) or Node.js         |
+| **Backend**            | Python (Flask)                              |
 | **AI Model**           | Google Gemini (via AI Studio / Gemini API)  |
 | **Deployment**         | Google Cloud Run                            |
 | **Cloud Integrations** | Google Cloud Storage (logging / image data) |
-| **Version Control**    | GitHub                                      |
 | **License**            | MIT License                                 |
 
 ---
